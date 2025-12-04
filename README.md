@@ -1,20 +1,31 @@
-Movie Recommender System using Machine Learning (Streamlit App)
+# Movie Recommender System with Posters (Streamlit + TMDB API)
 
-This project is an end-to-end Movie Recommender System built using machine learning and deployed via a Streamlit web application. The system provides personalized movie suggestions based on content similarity, enabling users to discover films similar to the ones they like. It uses metadata from the TMDB 5000 Movies and Credits datasets and employs text-based feature engineering, TF-IDF vectorization for recommendation generation.
+This project is an interactive Movie Recommendation System built using Machine Learning, Cosine Similarity, and Streamlit. It recommends the top 5 movies similar to a selected movie and displays high-quality posters fetched directly from the TMDB API.
 
-Features
+The system uses a content-based filtering approach, where recommendations are generated using a precomputed similarity matrix built from movie metadata such as genres, keywords, cast, and crew.
 
-Interactive Streamlit web interface
+# Features
 
-Content-based movie recommendations
+1. Movie Recommendation Engine
 
-TF-IDF vectorization
+Uses cosine similarity on processed movie feature vectors.
 
-Clean “tags” feature engineered from genres, keywords, cast, crew, and overview
+Recommends the top 5 most similar movies.
 
-Optional movie poster display using TMDB API
+2. Poster Fetching from TMDB
 
-Fast response through precomputed similarity matrix
+Integrates with The Movie Database (TMDB) API.
 
-Lightweight, modular, and deployable on cloud platforms
-3b1338bf76b7e21320c753103b4d3e21
+Fetches official movie posters in real time.
+
+Uses caching and retry logic to reduce API failures.
+
+3. Streamlit Web Application
+
+Clean, minimal, and responsive UI.
+
+Dropdown menu to select any movie.
+
+Displays recommendations in a horizontal poster grid.
+
+Optimized for fast performance.
