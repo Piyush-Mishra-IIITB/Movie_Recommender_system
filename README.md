@@ -29,3 +29,6 @@ Dropdown menu to select any movie.
 Displays recommendations in a horizontal poster grid.
 
 Optimized for fast performance.
+
+
+# the working link is https://movierecommendersystem-hwf9zm6mr84odvukg9s8zc.streamlit.app/
